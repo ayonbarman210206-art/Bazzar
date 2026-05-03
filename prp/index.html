@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pro Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>ProShop</h2>
+  <input type="text" id="search" placeholder="Search products..." onkeyup="searchProduct()">
+  <div>
+    <button onclick="goDashboard()">Dashboard</button>
+    <button onclick="login()">Login</button>
+  </div>
+</nav>
+
+<div id="products" class="product-grid"></div>
+
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-storage.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>

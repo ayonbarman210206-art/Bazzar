@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Seller Dashboard</h2>
+
+<input id="storeName" placeholder="Store Name">
+<input id="whatsapp" placeholder="WhatsApp Number">
+<button onclick="createStore()">Save Store</button>
+
+<h3>Add Product</h3>
+<input id="productName" placeholder="Product Name">
+<input id="price" placeholder="Price">
+<input type="file" id="imageFile">
+<button onclick="addProduct()">Upload Product</button>
+
+<h3>Your Products</h3>
+<div id="myProducts"></div>
+
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-storage.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
